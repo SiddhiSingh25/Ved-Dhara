@@ -1,0 +1,25 @@
+.alpha {
+    border-bottom: 1px solid #b52819;
+}
+
+.btn-select {
+    background-color: yellow;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.arrow-down-icon.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+
+.icon-content {
+    text-decoration: none;
+}

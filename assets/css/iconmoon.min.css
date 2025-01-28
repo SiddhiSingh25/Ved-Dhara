@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url(../fonts/icomoon.eot?d82fpo);
+    src: url('../fonts/icomoon.eot?d82fpo#iefix') format('embedded-opentype'), url(../fonts/icomoon.ttf?d82fpo) format('truetype'), url(../fonts/icomoon.woff?d82fpo) format('woff'), url('../fonts/icomoon.svg?d82fpo#icomoon') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-circle-solid:before {
+    content: "\e917"
+}
+
+.icon-square-share-nodes-solid:before {
+    content: "\e914"
+}
+
+.icon-hard-drive-solid:before {
+    content: "\e915"
+}
+
+.icon-play-solid:before {
+    content: "\e916"
+}
+
+.icon-angles-left-solid:before {
+    content: "\e900"
+}
+
+.icon-calendar-days-solid:before {
+    content: "\e901"
+}
+
+.icon-caret-down-solid:before {
+    content: "\e902"
+}
+
+.icon-caret-up-solid:before {
+    content: "\e903"
+}
+
+.icon-comments-solid:before {
+    content: "\e904"
+}
+
+.icon-fire-solid:before {
+    content: "\e905"
+}
+
+.icon-google-plus:before {
+    content: "\e906"
+}
+
+.icon-headphones-simple-solid:before {
+    content: "\e907"
+}
+
+.icon-heart-solid:before {
+    content: "\e908"
+}
+
+.icon-indian-rupee-sign-solid:before {
+    content: "\e909"
+}
+
+.icon-instagram:before {
+    content: "\e90a"
+}
+
+.icon-linkedin:before {
+    content: "\e90b"
+}
+
+.icon-paper-plane-solid:before {
+    content: "\e90c"
+}
+
+.icon-pen-fancy-solid:before {
+    content: "\e90d"
+}
+
+.icon-pen-to-square-solid:before {
+    content: "\e90e"
+}
+
+.icon-square-facebook:before {
+    content: "\e90f"
+}
+
+.icon-trash-can-solid:before {
+    content: "\e910"
+}
+
+.icon-twitter:before {
+    content: "\e911"
+}
+
+.icon-whatsapp:before {
+    content: "\e912"
+}
+
+.icon-youtube:before {
+    content: "\e913"
+}
+
+.fa-2x {
+    font-size: 2em
+}
+
+.fa-ul {
+    list-style-type: none;
+    margin-left: 2.5em;
+    padding-left: 0
+}
+
+.fa-li {
+    left: -2em;
+    position: absolute;
+    text-align: center;
+    width: 2em;
+    line-height: inherit
+}
+
+.fa-xs {
+    font-size: .75em
+}
