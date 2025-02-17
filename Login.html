@@ -25,7 +25,8 @@
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         max-width: 400px;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 60px;
+        margin-bottom:40px;
       }
       .btn-custom {
         background-color: #ff7c09;
@@ -41,127 +42,15 @@
       a:hover {
         text-decoration: none;
       }
-      /* nav */
-      .topbar {
-        background: #f8f9fa;
-        padding: 5px 0;
-        font-size: 14px;
-      }
-
-      .topbar a {
-        color: #ff4500;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      .navbar-brand img {
-        height: 60px;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-        border-radius: 5px;
-        padding: 5px;
-      }
-
-      .nav-link {
-        color: #333;
-        font-weight: 500;
-      }
-
-      .nav-link:hover {
-        color: #ff4500;
-      }
-
-      .social-icons a {
-        color: #ff4500;
-        margin-right: 10px;
-        font-size: 18px;
-      }
-
-      .btn-login {
-        background: #ff4500;
-        color: white;
-        font-weight: bold;
-        padding: 3px 7px ;
-      }
-
-      .btn-login:hover {
-        background: #e03e00;
-      }
-
-      .btn-link:hover {
-        color: white;
-      }
-
-
-      @media (max-width: 991px) {
-        .topbar,
-        .social-icons {
-          text-align: center;
-        }
-      }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
-      <div class="container mt-2">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <!-- Logo Image -->
-          <!-- <img src="logo.png" alt="Logo" class="logo"> -->
-          <span class="ms-1 text-danger fw-bold">𝓞𝓷𝓵𝓲𝓷𝓮 𝓟𝓸𝓸𝓳𝓪</span>
-        </a>
-
-        <!-- Toggle Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">ABOUT US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">CONTACT US</a>
-            </li>
-          </ul>
-          <div class="d-flex gap-2">
-            <a class="nav-link btn btn-login btn-link" href="./Register.html"
-              >Registration</a
-            >
-            <a class="nav-link btn btn-login btn-link" href="./Login.html"
-              >Login</a
-            >
-          </div>
-        </div>
-      </div>
-    </nav>
+    <div id="navbar"></div>
     <div class="container">
       <div class="register-container">
-        <h2 class="text-center">Register</h2>
+        <h2 class="text-center">Login</h2>
         <p class="text-center">Create an account to continue</p>
         <form>
-          <div class="mb-3">
-            <label class="form-label">Full Name</label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter your full name"
-              required
-            />
-          </div>
           <div class="mb-3">
             <label class="form-label">Email Address</label>
             <input
@@ -180,7 +69,7 @@
               required
             />
           </div>
-          <button type="submit" class="btn btn-custom w-100">Register</button>
+          <button type="submit" class="btn btn-custom w-100">Login</button>
         </form>
         <p class="mt-3 text-muted">
           Don't have an account?
@@ -188,8 +77,10 @@
         </p>
       </div>
     </div>
+    <div id="footer"></div>
 
     <!-- Bootstrap JS -->
+    <script src="Utils.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
