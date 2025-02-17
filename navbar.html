@@ -1,105 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar - Badrinath Kedarnath Yatra</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <style>
-        .topbar {
-            background: #f8f9fa;
-            padding: 5px 0;
-            font-size: 14px;
-        }
+      /* nav */
+      .topbar {
+        background: #f8f9fa;
+        padding: 5px 0;
+        font-size: 14px;
+      }
 
-        .topbar a {
-            color: #ff4500;
-            text-decoration: none;
-            font-weight: bold;
-        }
+      .topbar a {
+        color: #ff4500;
+        text-decoration: none;
+        font-weight: bold;
+      }
 
-        .navbar-brand img {
-            height: 60px;
-            width: auto;
-            max-width: 100%;
-            object-fit: contain;
-            border-radius: 5px;
-            padding: 5px;
-        }
+      .navbar-brand img {
+        height: 60px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+        border-radius: 5px;
+        padding: 5px;
+      }
 
-        .nav-link {
-            color: #333;
-            font-weight: 500;
-        }
+      .nav-link {
+        color: #333;
+        font-weight: 500;
+      }
 
-        .nav-link:hover {
-            color: #ff4500;
-        }
+      .nav-link:hover {
+        color: #ff4500;
+      }
 
-        .social-icons a {
-            color: #ff4500;
-            margin-right: 10px;
-            font-size: 18px;
-        }
+      .social-icons a {
+        color: #ff4500;
+        margin-right: 10px;
+        font-size: 18px;
+      }
 
-        .btn-login {
-            background: #ff4500;
-            color: white;
-            font-weight: bold;
-        }
+      .btn-login {
+        background: #ff4500;
+        color: white;
+        font-weight: bold;
+        padding: 3px 7px ;
+      }
 
-        .btn-login:hover {
-            background: #e03e00;
-        }
+      .btn-login:hover {
+        background: #e03e00;
+      }
 
-        @media (max-width: 991px) {
+      .btn-link:hover {
+        color: white;
+      }
 
-            .topbar,
-            .social-icons {
-                text-align: center;
-            }
+
+      @media (max-width: 991px) {
+        .topbar,
+        .social-icons {
+          text-align: center;
         }
+      }
     </style>
-</head>
-
-<body>
-
-    <!-- Navbar -->
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg bg-white shadow-sm">
-        <div class="container">
-            <!-- Logo -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <!-- <img src="logo.png" alt="Logo" class="logo"> -->
-                <span class="ms-1 text-danger fw-bold">𝓞𝓷𝓵𝓲𝓷𝓮 𝓟𝓸𝓸𝓳𝓪</span>
-            </a>
+      <div class="container mt-2">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <!-- Logo Image -->
+          <!-- <img src="logo.png" alt="Logo" class="logo"> -->
+          <span class="ms-1 text-danger fw-bold">𝓞𝓷𝓵𝓲𝓷𝓮 𝓟𝓸𝓸𝓳𝓪</span>
+        </a>
 
-            <!-- Toggle Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">ONLINE SERVICES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">OTHER TEMPLES</a></li>
-                </ul>
-
-                <!-- Buttons -->
-                <div class="d-flex gap-2">
-                    <button class="btn btn-login">Registration</button>
-                    <button class="btn btn-login">Login</button>
-
-                </div>
-            </div>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">CONTACT US</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-2">
+            <a class="nav-link btn btn-login btn-link" href="./Register.html"
+              >Registration</a
+            >
+            <a class="nav-link btn btn-login btn-link" href="./Login.html"
+              >Login</a
+            >
+          </div>
         </div>
+      </div>
     </nav>
 
-</body>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
