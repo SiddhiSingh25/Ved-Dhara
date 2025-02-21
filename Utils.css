@@ -1,0 +1,25 @@
+.common-button {
+    background-color: #f97316; /* Orange background */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .common-button:hover {
+    background-color: #d46014; /* Darker orange */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .common-button:active {
+    transform: scale(0.98);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  

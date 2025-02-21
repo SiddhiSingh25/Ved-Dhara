@@ -39,7 +39,13 @@
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
     <link href="assets/css/iconmoon.min.css" rel="stylesheet" />
     <link href="assets/css/custom.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!--<link href="manifest.json" rel="manifest">-->
     <style>
@@ -67,7 +73,7 @@
         font-size: 1.2rem;
       }
 
-      .nav-icon-idx{
+      .nav-icon-idx {
         font-size: 1.6rem;
       }
 
@@ -201,25 +207,37 @@
         .res-text {
           display: none;
         }
-        
+
         .hero h1 {
           font-size: clamp(2rem, 5vw, 3rem);
           opacity: 0.85;
+          color: #f0e8e8e4;
         }
 
         .hero p {
           font-size: 0.9rem;
+        }
+
+        .hero {
+          padding: 15vw 15vw;
+          border-radius: 0;
+          height: 35vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 0;
         }
       }
     </style>
   </head>
 
   <body>
-    <!-- <div id="navbar"></div> -->
     <div class="container mt-4 responsive-container">
       <div class="hero">
         <h1>Welcome to Pooja Path</h1>
-        <p class="res-text">Your trusted platform for authentic religious rituals</p>
+        <p class="res-text">
+          Your trusted platform for authentic religious rituals
+        </p>
       </div>
     </div>
     <div class="bgImg container responsive-container mb-3">
@@ -670,5 +688,18 @@
     <script src="./script.js"></script>
     <script src="Utils.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function loadComponent(elementId, filePath) {
+        fetch(filePath)
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById(elementId).innerHTML = data;
+          })
+          .catch((error) => console.error(`Error loading ${filePath}:`, error));
+      }
+
+      // Load navbar and footer
+      loadComponent("footer", "footer.html");
+    </script>
   </body>
 </html>
