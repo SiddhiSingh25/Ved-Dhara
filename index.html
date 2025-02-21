@@ -121,14 +121,6 @@
           left: 50%;
           transform: translate(-50%, 0px);
         }
-        .hero h1 {
-          font-size: clamp(2rem, 5vw, 3rem);
-          opacity: 0.85;
-        }
-
-        .hero p {
-          font-size: 0.9rem;
-        }
       }
 
       @media (min-width: 1200px) {
@@ -205,6 +197,20 @@
       .index-link {
         color: #111;
       }
+      @media (max-width: 768px) {
+        .res-text {
+          display: none;
+        }
+        
+        .hero h1 {
+          font-size: clamp(2rem, 5vw, 3rem);
+          opacity: 0.85;
+        }
+
+        .hero p {
+          font-size: 0.9rem;
+        }
+      }
     </style>
   </head>
 
@@ -213,7 +219,7 @@
     <div class="container mt-4 responsive-container">
       <div class="hero">
         <h1>Welcome to Pooja Path</h1>
-        <p>Your trusted platform for authentic religious rituals</p>
+        <p class="res-text">Your trusted platform for authentic religious rituals</p>
       </div>
     </div>
     <div class="bgImg container responsive-container mb-3">
