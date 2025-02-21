@@ -10,7 +10,8 @@
             background-color: #f8f9fa;
         }
         .hero {
-            background: url('https://images.unsplash.com/photo-1736228077281-a231c87cc764?q=80&w=2128&auto=format&fit=crop') no-repeat center;
+            background: url('https://images.unsplash.com/photo-1736228077281-a231c87cc764?q=80&w=2128&auto=format&fit=crop') no-repeat ;
+            background-position: top;
             background-size: cover;
             color: #fff;
             text-align: center;
@@ -36,16 +37,19 @@
             padding: 20px;
             border-radius: 10px;
         }
+        @media (max-width: 768px) {
+        .responsive-text {
+          display: none;
+        }
+      }
     </style>
 </head>
 <body>
     <div id="navbar"></div>
-   <div class="container mt-4">
-    <div class="hero container ">
-        <h1>Book a Pooja</h1>
-        <p>Perform sacred rituals for peace and prosperity.</p>
+    <div class="hero container mt-4 ">
+        <h1 class="responsive-text">Book a Pooja</h1>
+        <p class="responsive-text">Perform sacred rituals for peace and prosperity.</p>
     </div>
-   </div>
 
     <div class="container my-4">
         <h2 class="text-center mb-4">Available Poojas</h2>
