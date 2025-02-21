@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book a Pooja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1736228077281-a231c87cc764?q=80&w=2128&auto=format&fit=crop') no-repeat center;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .pooja-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .testimonial {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .faq-section {
+            background-color: #f97316;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Heyy</h1>
+    <div id="navbar"></div>
+    <div class="hero">
+        <h1>Book a Pooja</h1>
+        <p>Perform sacred rituals for peace and prosperity.</p>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Available Poojas</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="pooja-card">
+                    <h4>Ganapathy Homa</h4>
+                    <p>Removes obstacles and brings success.</p>
+                    <p><strong>Rs. 501/-</strong></p>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="pooja-card">
+                    <h4>Mrityunjaya Homa</h4>
+                    <p>For health, longevity, and protection.</p>
+                    <p><strong>Rs. 1100/-</strong></p>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="pooja-card">
+                    <h4>Navagraha Homa</h4>
+                    <p>Balances planetary influences.</p>
+                    <p><strong>Rs. 1500/-</strong></p>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Testimonials</h2>
+        <div class="testimonial">
+            <p>"The pooja brought so much positivity into my life! Highly recommended." - <strong>Ramesh K.</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"I feel spiritually uplifted after the Ganapathy Homa. Thank you!" - <strong>Sneha M.</strong></p>
+        </div>
+    </div>
+
+    <div class="container my-5 faq-section">
+        <h2 class="text-center mb-4">FAQs</h2>
+        <p><strong>How do I book a pooja?</strong></p>
+        <p>Click on the "Book Now" button and follow the instructions.</p>
+        <p><strong>Where will the pooja be performed?</strong></p>
+        <p>The pooja is performed at a temple, and you can receive blessings remotely.</p>
+    </div>
+ <div id="footer"></div>
+ <script src="Utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
